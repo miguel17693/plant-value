@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Form from './components/Form';
+import { useState } from 'react';
+import Info from './components/Info';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  const [price, setPrice] = useState(0);
+  const [dailyLE, setDailyLE] = useState(0);
+
+  return (<div>
+   <Form setPrice = {setPrice} setDailyLE = {setDailyLE}></Form>
+   <Info price ={price} dailyLE={dailyLE}></Info>
+   </div>
   );
 }
 
