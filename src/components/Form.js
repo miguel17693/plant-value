@@ -4,22 +4,27 @@ function Form({ setPrice, setDailyLE }) {
   const [input, setInput] = useState();
   const submit = (event) => {
     event.preventDefault();
-    let inputArray = input.split(" ");
-    //We've got the price
-    console.log(inputArray[0].replace(/[^0-9.]/g, ''))
+    if (input) {
+      console.log(input)
+      let inputArray = input.split(" ");
+      console.log(inputArray)
+      //We've got the price
+      console.log(inputArray[0].replace(/[^0-9.]/g, ""));
 
-    setPrice(inputArray[0].replace(/[^0-9.]/g, ""));
-    // and here le per hour
-    const [LE,hour] = inputArray[1].split("/");
-    setDailyLE(LE/hour*24)
+      setPrice(inputArray[0].replace(/[^0-9.]/g, ""));
+      // and here le per hour
+      if (inputArray[6]) {
+        const [LE, hour] = inputArray[6].split("/");
+        setDailyLE((LE / hour) * 24);
+      }
+    }
   };
   return (
     <form>
-      <textarea
-        value={input}
-        onChange={(event) => setInput(event.target.value)}
-      />
-      <button onClick={submit}>Calculate! </button>
+      <input value={input} onChange={(event) => setInput(event.target.value)} />
+      <div>
+        <button onClick={submit}>Calculate! </button>
+      </div>
     </form>
   );
 }
