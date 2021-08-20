@@ -26,6 +26,7 @@ console.log(plantsStatus)
           <h3> Plant with less days to return your invest:  </h3>
           <p> ID : <b> {lessDaysRecover.id}</b></p>
           <p> In only <b> {  lessDaysRecover.price *100/lessDaysRecover.dailyLe}</b> days you've got your investment returned </p>
+          <p>Wining <b> {lessDaysRecover.dailyLe}</b> per day </p>
           <p className="message">*This info has being calculated without pots, crows or anything, only the data copied, 
           Le /hour *24 *30</p>
       </div>
