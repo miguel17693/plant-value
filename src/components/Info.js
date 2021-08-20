@@ -19,11 +19,11 @@ console.log(plantsStatus)
 
   return (
       <div>
-         <h4> I've analyzed <b> {plantsStatus.length} plants</b>  </h4>
-          <h4> Plant with Maximum LE per day:  </h4>
+         <h2> I've analyzed <b> {plantsStatus.length} plants</b>  </h2>
+          <h3> Plant with Maximum LE per day:  </h3>
           <p> ID : <b> {maxDaily.id}</b></p>
           <p>Wining <b> {maxDaily.dailyLe}</b> per day </p>
-          <h4> Plant with less days to return your invest:  </h4>
+          <h3> Plant with less days to return your invest:  </h3>
           <p> ID : <b> {lessDaysRecover.id}</b></p>
           <p> In only <b> {  lessDaysRecover.price *100/lessDaysRecover.dailyLe}</b> days you've got your investment returned </p>
           <p className="message">*This info has being calculated without pots, crows or anything, only the data copied, 
