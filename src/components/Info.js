@@ -19,6 +19,7 @@ console.log(plantsStatus)
 
   return (
       <div>
+         <h4> I've analyzed <b> {plantsStatus.length} plants</b>  </h4>
           <h4> Plant with Maximum LE per day:  </h4>
           <p> ID : <b> {maxDaily.id}</b></p>
           <p>Wining <b> {maxDaily.dailyLe}</b> per day </p>
