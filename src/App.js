@@ -4,27 +4,25 @@ import Info from "./components/Info";
 import "./App.css";
 
 function App() {
-  const [price, setPrice] = useState(0);
-  const [dailyLE, setDailyLE] = useState(0);
+  const [plantsStatus, setPlantsStatus] = useState([]);
 
   return (
     <div className="login-page">
       <div className="form">
         <Form
           className="register-form"
-          setPrice={setPrice}
-          setDailyLE={setDailyLE}
+          plantsStatus={plantsStatus}
+          setPlantsStatus={setPlantsStatus}
         ></Form>
       </div>
 
-      {price ? (
+      {plantsStatus[0] ? (
         <div className="form">
           {" "}
           <Info
             className="register-form"
-            price={price}
-            dailyLE={dailyLE}
-          ></Info>{" "}
+            plantsStatus= {plantsStatus}
+          ></Info >{" "}
         </div>
       ) : (
         ""
