@@ -10,7 +10,7 @@ console.log(plantsStatus)
       maxDaily = plantStatus;
      
     }
-    if (!lessDaysRecover.price ||( plantsStatus.price *100/plantsStatus.dailyLe) > (lessDaysRecover.price *100/lessDaysRecover.dailyLe)) {
+    if (!lessDaysRecover.price ||( plantsStatus.price *100/plantsStatus.dailyLe) < (lessDaysRecover.price *100/lessDaysRecover.dailyLe)) {
       lessDaysRecover = plantStatus;
 
     }

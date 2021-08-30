@@ -36,7 +36,7 @@ function Form({ plantsStatus, setPlantsStatus }) {
     <form>
       <input value={input} onChange={(event) => setInput(event.target.value)} />
       <div>
-        <button onClick={submit}>Calculate! </button>
+        <button onClick={submit}>Calcular! </button>
       </div>
     </form>
   );
