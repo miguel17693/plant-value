@@ -11,15 +11,6 @@ console.log(plantsStatus)
      
     }
     if (!lessDaysRecover.price ||( plantStatus.price *100/plantStatus.dailyLe) < (lessDaysRecover.price *100/lessDaysRecover.dailyLe)) {
-      console.log("he entrado aquí porque" );
-      console.log(plantsStatus)
-      console.log(lessDaysRecover)
-      console.log( plantsStatus.price *100/plantsStatus.dailyLe);
-      console.log(`plant status price ${plantsStatus.price} plant status daily ${plantsStatus.dailyLe}. `)
-      console.log(`lessDaysRecover price ${lessDaysRecover.price} lessDaysRecover daily ${lessDaysRecover.dailyLe}. `)
-      console.log("es mayor que ");
-      console.log(lessDaysRecover.price *100/lessDaysRecover.dailyLe)
-      console.log("---------------");
       lessDaysRecover = plantStatus;
 
     }
