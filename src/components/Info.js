@@ -25,7 +25,7 @@ console.log(plantsStatus)
           <p>Ganando <b> {maxDaily.dailyLe}</b> LE cada día </p>
           <h3> Planta con menos días para recuperar tu inversión </h3>
           <p> ID : <b> {lessDaysRecover.id}</b></p>
-          <p> En sólo <b> {  lessDaysRecover.price *100/lessDaysRecover.dailyLe}</b> días has recuperado tu inversión </p>
+          <p> En sólo <b> {  lessDaysRecover.price *150/lessDaysRecover.dailyLe}</b> días has recuperado tu inversión </p>
           <p>Ganando <b> {lessDaysRecover.dailyLe}</b> LE cada día </p>
           <p className="message">*Esta información se genera sin macetas, cuervos ni nada, sólo calculado con los datos copiados 
           LE cada hora:  *24 *30</p>
